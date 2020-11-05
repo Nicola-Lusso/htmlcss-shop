@@ -3,3 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* main */
+.container{
+  width: 960px;
+  height: 900px;
+  margin: 10px;
+  background-color: lightblue;
+}
+
+/* section */
+/* .row{
+  background-color: yellow;
+  margin-bottom: 20px;
+} */
+
+.box{
+  display: inline-block;
+  position: relative;
+}
+
+/* Sfondo sconto  */
+.box .sconto{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: green;
+}
+
+/* Sfondo sconto pari */
+.box:nth-child(even) .sconto{
+  background-color: red;
+}
+
+/* Cuore */
+.box .cuore{
+  display:none;
+  position:absolute;
+  bottom: 5%;
+  left: 0%;
+  width: 100%;
+  font-size: 25px;
+  color: red;
+  text-align:center;
+}
+
+.box:hover .cuore{
+  display: inline-block;
+}
